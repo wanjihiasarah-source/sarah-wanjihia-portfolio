@@ -419,3 +419,184 @@ details summary:hover u {
     text-decoration: underline;
     color: #ff7eb3;
 }
+/* ===== MOBILE RESPONSIVE FIXES ===== */
+/* Add these at the very end of your wanjihia.css file */
+
+/* Mobile first approach - better for all devices */
+@media (max-width: 768px) {
+    /* Reset the fixed grid for mobile */
+    body {
+        grid-template-areas: 
+            'header'
+            'cv'
+            'workplan'
+            'footer';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto;
+        overflow: auto;
+        min-height: 100vh;
+    }
+    
+    /* Header adjustments */
+    .header {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+        gap: 15px;
+    }
+    
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .header img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+    }
+    
+    /* CV section */
+    .cv {
+        overflow-y: visible;
+        max-height: none;
+        padding: 15px;
+    }
+    
+    /* Workplan section */
+    .workplan {
+        overflow: visible;
+        max-height: none;
+        padding: 15px;
+    }
+    
+    /* Software grid - stack vertically on mobile */
+    .software-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+    
+    /* Project cards */
+    .project-card {
+        padding: 15px;
+    }
+    
+    /* Code blocks - make scrollable on mobile */
+    pre {
+        overflow-x: auto;
+        white-space: pre-wrap;
+        word-wrap: break-word;
+        font-size: 0.75rem;
+    }
+    
+    /* Buttons - full width on mobile */
+    .project-button, 
+    .workplan button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    /* Project actions */
+    .project-actions {
+        flex-direction: column;
+    }
+    
+    .project-actions button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    /* Footer - stack vertically */
+    .foot {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Tables - make scrollable */
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    /* Section spacing */
+    section {
+        margin-bottom: 15px;
+    }
+    
+    /* Headings */
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    /* Fix spacing in CV */
+    .cv ul li {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+    }
+    
+    .cv p {
+        font-size: 0.95rem;
+    }
+    
+    /* Fix spacing in workplan */
+    .workplan h4 {
+        font-size: 1rem;
+        margin-top: 15px;
+    }
+    
+    /* Local demo note */
+    .local-demo-note {
+        flex-direction: column;
+        text-align: center;
+        padding: 12px;
+    }
+    
+    .local-demo-note i {
+        font-size: 1.5rem;
+    }
+}
+
+/* Small phones (under 480px) */
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 1.2rem;
+    }
+    
+    h2 {
+        font-size: 1.2rem;
+    }
+    
+    .sarah {
+        font-size: 1.2rem;
+    }
+    
+    .workplan details summary {
+        font-size: 0.9rem;
+    }
+    
+    /* Reduce padding */
+    .cv, .workplan {
+        padding: 10px;
+    }
+    
+    details {
+        padding: 10px;
+    }
+}
