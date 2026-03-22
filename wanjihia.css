@@ -1,0 +1,421 @@
+/* Remove default browser margins */
+* {
+    margin: 0;
+}
+
+/* Make page take full screen */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+/* Main grid layout */
+body {
+    display: grid;
+    grid-template-areas: 
+        'header header'
+        'cv workplan'
+        'footer footer';
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 10% 80% 10%;
+    overflow: hidden;
+}
+
+/* Header styling */
+.header {
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(135deg, #6a4ccc 0%, #ff7eb3 100%);
+    color: white;
+}
+
+/* Left section - can scroll */
+.cv {
+    grid-area: cv;
+    overflow-y: auto;
+    padding: 20px;
+}
+
+/* Right section - no scroll */
+.workplan {
+    grid-area: workplan;
+    overflow: auto;
+    padding: 20px;
+}
+
+/* Footer styling */
+.foot {
+    grid-area: footer;
+    background: linear-gradient(135deg, #6a4ccc 0%, #a594f9 100%);
+    color: white;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Profile picture */
+img {
+    height: 80%;
+    border-radius: 50%;
+}
+
+/* Section titles */
+h2 {
+    color: #6a4ccc;
+    margin-bottom: 15px;
+}
+
+/* Dropdown sections */
+details {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+/* Dropdown titles */
+summary {
+    font-weight: bold;
+    color: #6a4ccc;
+}
+
+/* Content inside dropdowns */
+.cv div, .workplan div {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+/* List items */
+li {
+    margin-bottom: 8px;
+}
+
+/* Social media links container */
+.social-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Social media buttons */
+.social-button {
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+}
+
+/* Main name in header */
+.name {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Name in CV section */
+.sarah {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6a4ccc;
+}
+/* ===== ADD THESE STYLES TO THE END OF YOUR EXISTING wanjihia.css ===== */
+/* These enhance the CV content without modifying your original styles */
+
+/* Section styling for better readability */
+section {
+    margin-bottom: 20px;
+}
+
+/* Bold text emphasis */
+b, strong {
+    color: #6a4ccc;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, #6a4ccc, #ff7eb3, transparent);
+    margin: 20px 0;
+}
+
+/* Paragraph spacing */
+p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* List styling enhancement */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+ul li:before {
+    content: "•";
+    color: #ff7eb3;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* Nested lists */
+ul ul {
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+ul ul li:before {
+    content: "◦";
+    color: #6a4ccc;
+}
+
+/* Project titles in CV */
+.cv p b, .cv p strong {
+    display: inline-block;
+    margin-top: 5px;
+    font-size: 1.1rem;
+}
+
+/* Emphasized text */
+em {
+    color: #ff7eb3;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* Education section */
+.cv ul li:contains("Diploma") {
+    font-weight: 500;
+}
+
+/* Workplan details enhancement */
+.workplan details[open] {
+    background: rgba(106, 76, 204, 0.02);
+}
+
+/* Software grid from your workplan */
+.software-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin: 15px 0;
+}
+
+.software-item {
+    background: linear-gradient(135deg, #f8f9fa, #ffffff);
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 3px solid #6a4ccc;
+    transition: transform 0.2s ease;
+}
+
+.software-item:hover {
+    transform: translateX(5px);
+}
+
+.software-item strong {
+    display: block;
+    color: #6a4ccc;
+    margin-bottom: 5px;
+}
+
+.software-item p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Button styling for workplan buttons */
+.workplan button {
+    background: linear-gradient(135deg, #6a4ccc, #ff7eb3);
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 10px 0;
+    transition: all 0.3s ease;
+}
+
+.workplan button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 76, 204, 0.3);
+}
+
+/* Checkbox styling in workplan */
+.workplan input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #6a4ccc;
+}
+
+/* Code tag styling */
+code {
+    background: #f0f0f0;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    color: #6a4ccc;
+}
+
+/* Field study section */
+.workplan h3, .workplan h4 {
+    color: #6a4ccc;
+    margin: 15px 0 10px 0;
+}
+
+.workplan h4 {
+    color: #ff7eb3;
+}
+
+/* Social links enhancement */
+.social-button i {
+    margin-right: 5px;
+}
+
+.social-button:hover {
+    text-decoration: underline;
+    opacity: 0.9;
+}
+
+/* Responsive adjustments - keeps your grid intact */
+@media (max-width: 768px) {
+    /* Your existing media queries remain, we're just adding content adjustments */
+    .software-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    ul li {
+        padding-left: 15px;
+    }
+}
+
+/* Print styles - if someone prints your CV */
+@media print {
+    .header, .workplan, .foot, .social-links {
+        display: none;
+    }
+    
+    body {
+        display: block;
+        overflow: visible;
+    }
+    
+    .cv {
+        overflow: visible;
+        padding: 0;
+    }
+    
+    hr {
+        background: #ccc;
+    }
+}
+
+/* Smooth scrolling for the whole page */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Selection highlight */
+::selection {
+    background: #ff7eb3;
+    color: white;
+}
+
+/* Workplan details summary styling */
+.workplan details summary {
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.2s ease;
+}
+
+.workplan details summary:hover {
+    background: rgba(106, 76, 204, 0.05);
+}
+
+.workplan details summary u {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Add a subtle pattern to the background */
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+}
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 0.85rem;
+    border: 1px solid #ddd;
+}
+/* Add at the end of your CSS file */
+.local-demo-note {
+    background: #fff3cd;
+    color: #856404;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 15px 0;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid #ffc107;
+}
+
+.local-demo-note i {
+    font-size: 1.2rem;
+    color: #ffc107;
+}
+/* Better spacing for project sections */
+.project-section {
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+/* Make buttons consistent */
+.project-button {
+    background: linear-gradient(135deg, #6a4ccc, #ff7eb3);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+}
+
+.project-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(106, 76, 204, 0.3);
+}
+
+/* Visual indicator for clickable sections */
+details summary {
+    cursor: pointer;
+    user-select: none;
+}
+
+details summary u {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+details summary:hover u {
+    text-decoration: underline;
+    color: #ff7eb3;
+}

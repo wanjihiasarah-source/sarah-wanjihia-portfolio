@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tenancy Agreement Template</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 2em;
+        }
+        details {
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            margin-bottom: 1em;
+            padding: 0.5em;
+        }
+        summary {
+            font-weight: bold;
+            cursor: pointer;
+            padding: 0.5em;
+        }
+        span {
+            border: 1px dashed #4285f4;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>TENANCY AGREEMENT</h1>
+
+    <details open>
+        <summary>Preamble and Date of Agreement</summary>
+        <p>
+            THIS AGREEMENT is made this
+            <span style="background-color: lightgreen;" data-id="contract.day" data-description="Day of the month">[contract.day: Day of the month]</span> day of
+            <span style="background-color: lightgreen;" data-id="contract.month" data-description="Month of the year">[contract.month: Month of the year]</span> Two Thousand and
+            <span style="background-color: yellow;" data-id="contract.year_words" data-description="Year in words">[contract.year_words: Year in words]</span>
+            (<span style="background-color: yellow;" data-id="contract.year_digits" data-description="Year in digits">[contract.year_digits: Year in digits]</span>).
+        </p>
+    </details>
+
+    <details open>
+        <summary>Parties to the Agreement</summary>
+        <h3>BETWEEN:</h3>
+        <p>
+            A. <strong><span style="background-color: yellow;" data-id="business.name" data-description="Agent's Company Name">[business.name: Agent's Company Name]</span></strong> of postal address Number <span style="background-color: yellow;" data-id="business.address" data-description="Agent's Postal Address">[business.address: Agent's Postal Address]</span>
+            (hereinafter called “the Agent” which expression shall where the context so admits include its successors and assigns) of the one part;
+        </p>
+        <h3>AND</h3>
+        <p>
+            B. <strong><span style="background-color: yellow;" data-id="tenant.name" data-description="Tenant's Full Name">[tenant.name: Tenant's Full Name]</span></strong> of national identification number <span style="background-color: yellow;" data-id="tenant.id" data-description="Tenant's National ID Number">[tenant.id: Tenant's National ID Number]</span> and of Post Office Box Number
+            <span style="background-color: yellow;" data-id="tenant.address" data-description="Tenant's Post Office Box Number">[tenant.address: Tenant's Post Office Box Number]</span> (hereinafter called “the Tenant” which expression shall where the context so admits include its successors and assigns) of the other part.
+        </p>
+    </details>
+
+    <details open>
+        <summary>Property and Term Details</summary>
+        <h3>NOW IT IS AGREED AS FOLLOWS:</h3>
+        <p>
+            The Agent agrees to let and the Tenant to take ALL THAT message or tenement with the appurtenances thereto belonging to the Landlord and known as located in <strong>MUTALL BUSINESS CENTRE OFFICE UNIT NUMBER</strong>
+            <span style="background-color: yellow;" data-id="room.uid" data-description="Office Unit Number">[room.uid: Office Unit Number]</span> ON
+            <span style="background-color: yellow;" data-id="room.floor_no" data-description="Floor Number">[room.floor_no: Floor Number]</span> FLOOR SUIT NUMBER
+            <span style="background-color: yellow;" data-id="property.suite_number" data-description="Suite Number">[property.suite_number: Suite Number]</span> ON L.R. NO. <strong>17140 MAGADI ROAD KISERIAN</strong> (hereinafter called “the Premises”) for the term of
+            <span style="background-color: yellow;" data-id="contract.term" data-description="Term duration in words">[contract.term: Term duration in words]</span> (<span style="background-color: lightgreen;" data-id="term.duration_digits" data-description="Term duration in digits">[term.duration_digits: Term duration in digits]</span>) year commencing on
+            <span style="background-color: yellow;" data-id="contract.date_words" data-description="Commencement Date">[contract.date_words: Commencement Date]</span> at a
+            <span style="background-color: yellow;" data-id="contract.frequency_words" data-description="Rent payment frequency (e.g., monthly/quarterly)">[contract.frequency_words: Rent payment frequency]</span> rent of Kenya Shillings
+            (<span style="background-color: lightgreen;" data-id="rent.amount_words" data-description="Rent amount in words">[rent.amount_words: Rent amount in words]</span>) only payable monthly in advance with a
+            <span style="background-color: yellow;" data-id="contract.deposit_span_words" data-description="Refundable deposit duration in words (e.g., Two)">[contract.deposit_span_words: Refundable deposit duration]</span> months refundable deposit.
+        </p>
+    </details>
+    
+    <details>
+        <summary>Schedule of Payments</summary>
+        <table>
+            <thead>
+                <tr>
+                    <th>NO</th>
+                    <th>ITEM</th>
+                    <th>AMOUNT</th>
+                    <th>DURATION</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>RENT</td>
+                    <td><span style="background-color: yellow;" data-id="contract.rent_calculation" data-description="Rent Amount">[contract.rent_calculation: Rent Amount]</span></td>
+                    <td><span style="background-color: lightgreen;" data-id="payment.rent_duration" data-description="Rent Duration">[payment.rent_duration: Rent Duration]</span></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>OFFICE DEPOSIT</td>
+                    <td><span style="background-color: yellow;" data-id="payment.office_deposit" data-description="Office Deposit Amount">[payment.office_deposit: Office Deposit Amount]</span></td>
+                    <td><span style="background-color: lightgreen;" data-id="payment.office_deposit_duration" data-description="Office Deposit Duration">[payment.office_deposit_duration: Office Deposit Duration]</span></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>WATER DEPOSIT</td>
+                    <td><span style="background-color: yellow;" data-id="payment.water_deposit" data-description="Water Deposit Amount">[payment.water_deposit: Water Deposit Amount]</span></td>
+                    <td><span style="background-color: lightgreen;" data-id="payment.water_deposit_duration" data-description="Water Deposit Duration">[payment.water_deposit_duration: Water Deposit Duration]</span></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>ELECTRICITY DEPOSIT</td>
+                    <td><span style="background-color: yellow;" data-id="payment.electricity_deposit" data-description="Electricity Deposit Amount">[payment.electricity_deposit: Electricity Deposit Amount]</span></td>
+                    <td><span style="background-color: lightgreen;" data-id="payment.electricity_deposit_duration" data-description="Electricity Deposit Duration">[payment.electricity_deposit_duration: Electricity Deposit Duration]</span></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>SERVICE CHARGE</td>
+                    <td><span style="background-color: yellow;" data-id="contract.service_charge" data-description="Service Charge Amount">[contract.service_charge: Service Charge Amount]</span></td>
+                    <td><span style="background-color: lightgreen;" data-id="payment.service_charge_duration" data-description="Service Charge Duration">[payment.service_charge_duration: Service Charge Duration]</span></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>SECURITY FEE</td>
+                    <td><span style="background-color: yellow;" data-id="payment.security_fee" data-description="Security Fee Amount">[payment.security_fee: Security Fee Amount]</span></td>
+                    <td><span style="background-color: lightgreen;" data-id="payment.security_fee_duration" data-description="Security Fee Duration">[payment.security_fee_duration: Security Fee Duration]</span></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><strong>TOTAL PAID</strong></td>
+                    <td><strong><span style="background-color: yellow;" data-id="contract.totalservicecharge" data-description="Total Amount Paid">[contract.totalservicecharge: Total Amount Paid]</span></strong></td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </details>
+
+    <details>
+        <summary>Landlord's Bank Account Details</summary>
+        <p>
+            <strong>Account Name:</strong> <span style="background-color: yellow;" data-id="business.account_details" data-description="Bank Account Name">[bank.account_name: Bank Account Name]</span><br>
+            <strong>Bank:</strong> <span style="background-color: yellow;" data-id="bank.name" data-description="Bank Name">[bank.name: Bank Name]</span><br>
+            <strong>Branch:</strong> <span style="background-color: yellow;" data-id="bank.branch" data-description="Bank Branch">[bank.branch: Bank Branch]</span><br>
+            <strong>Account Number:</strong> <span style="background-color: yellow;" data-id="bank.account_number" data-description="Bank Account Number">[bank.account_number: Bank Account Number]</span>
+        </p>
+    </details>
+
+    <details>
+        <summary>2. The Tenant's Covenants</summary>
+        <p>The Tenant hereby agrees with the AGENT as follows:</p>
+        <ol type="i">
+            <li>To pay the rent hereby reserved on the days and in the manner aforesaid clear of all deductions whatsoever; To occupy the premises upon payment of the rent. To pay the rent on or before the 10th day of each month, which rent shall be deposited to the Landlord's account. <strong>PROVIDED</strong> that it is hereby agreed that late payment of rent shall attract a Penalty of <strong>10%</strong> of the rent due per month.</li>
+            <li>To pay all electricity, conservancy and water charges raised in respect of the Premises during the tenancy;</li>
+            <li>To indemnify the landlord against any actions, claims or demands arising out of leakage or overflow of water from the PREMISES; or out of the tenancy.</li>
+            <li>To use electric or gas cookers and not to use firewood or paraffin or other means of cooking in the Premises;</li>
+            <li>To keep the Premises and fixtures therein clean and in good condition.</li>
+            <li>To pay for the replacement or make good repair or restore all such of the fixtures and fittings as shall be broken, lost, damaged during the tenancy and to replace any keys (or the appropriate locks) which are shown on the inventory and which are lost, broken, damaged or destroyed;</li>
+            <li>To be responsible for all damage which is incurred as the result of negligence or willful act on the part of the Tenant and/or occupant to walls, ceiling, floors, windows and doors and repair the same at the Tenant's expense if required to do so by the Landlord or the Landlord's authorized agents;</li>
+            <li>To be responsible for all normal running repairs and maintenance in connection with internal plumbing, furniture, fittings, immersion heaters, windows, locks, handles and fasteners and ensure that they are in good working order before taking occupation of the Premises;</li>
+            <li>To permit the landlord and or his agents at all reasonable times when convenient for the Tenant and on reasonable notice during the term with or without workmen or others to enter upon the Premises and view the state of repair and condition thereof or to do such works and things as may be required for any repairs, alterations, additions, improvements or renewals of the Premises or any part thereof or of electricity or water supply or drainage or any other part of the said Premises AND should any defects or want of repair be found which the Tenant shall be liable herein notice in writing thereof shall be given to the Tenant and the Tenant shall within fourteen (14) days after service of such notice commence and proceed diligently with the execution of repairs and works mentioned in such notice PROVIDED that if the Tenant fails to carry out such repairs to the Landlord's satisfaction it shall be lawful for the Landlord and / or its agents to enter upon the Premises and execute such repairs and works and the cost thereof (which expression shall include but not be limited to all legal costs and other expenditure whatsoever attendant thereon) shall be a debt due from the Tenant to the Landlord and be forthwith and summarily recoverable as additional rent;</li>
+            <li>At all times during the three (3) calendar months immediately preceding the determination of the said term to permit the Landlord and/ or his agents to affix upon any part of the Premises but so as to cause no inconvenience to the Tenant a notice for re-letting the Premises and during the same three (3) months to permit intending tenants and others with written authority from the Landlord or its agents at reasonable times of the day and upon prior notice to view the premises;</li>
+            <li>To keep the Demised Premises in such clean and tidy condition as is reasonably consistent with the Tenancy.</li>
+            <li>NOT to make any alterations or additions to the Premises or to drive any nails screws or other fasteners into walls, floors, doors or ceiling without the consent in writing of the Landlord or his authorized agents;</li>
+            <li>To use the Premises for <span style="background-color: yellow;" data-id="usage.purpose" data-description="Permitted use of premises">[usage.purpose: Permitted use of premises]</span> purposes only and not to carry on any form of business or use the Premises as a boarding house or for any other unauthorized purpose without the consent in writing of the Landlord or his authorized agents;</li>
+            <li>NOT to sub-let the Premises during the period of the tenancy without the consent in writing of the Landlord or its authorized agents;</li>
+            <li>Not to keep any domestic animals, pets etc that will interfere with the other tenant's quite enjoyment of their premises or destroy the compound or course any accidents whatsoever.</li>
+            <li>NOT to do or permit or suffer to be done anything whereby any insurance of the said Premises against loss or damage by fire may become void or voidable or whereby the rate of premium for any such insurance may be increased and to repay to the Landlord all sums paid by way of increased premium and all expenses incurred by the Landlord in or about the renewal of any such policy rendered necessary by a breach of this covenant and all such payments shall be added to the rent herein before reserved and be recoverable as rent;</li>
+            <li>In the event of the Premises or any part thereof being damaged or destroyed by fire at any time during the tenancy hereby created and the insurance money under any insurance policy against fire effected thereon by the Landlord being wholly or partly irrecoverable by reason solely or in part of any act or default of the Tenant then in every such case the Tenant will forthwith (in addition to the said rent) pay to the Landlord the whole or (as the case may require) a fair proportion of the cost of completely rebuilding and reinstating the Premises and any dispute as to the proportion to be so contributed by the Tenant or otherwise in respect of or arising out of this provision shall be referred to arbitration in accordance with the Arbitration Act or any statutory modifications or re-enactment thereof for the time being in force;</li>
+            <li>NOT to do or permit or suffer to be done anything in or upon the Premises or any part thereof which may at any time be or become a nuisance or annoyance to the neighbours or injurious or detrimental to the reputation of the said Premises;</li>
+            <li>To take every reasonable precaution to ensure that white ants or other destructive insects do not gain access to the premises and to notify the Landlord forthwith in the event of any infestations appearing;</li>
+            <li>Not to use the Demised property for any dangerous noxious noisy or offensive trade or business manufacture or occupation nor for any illegal or immoral act or purpose;</li>
+            <li>Not to abandon and or keep the demised property unoccupied for a period of 21 days without a written notice to the Landlord.</li>
+            <li>Legal fees for preparation and completion of this Agreement and one copy thereof shall be shared equally between the Landlord and Tenant;</li>
+            <li>At all times during the continuance of the term hereby created to comply with all laws, acts, rules, regulations or by-laws now or thereafter enacted, passed, made or issued by the Government of Kenya and any Municipal, Township, Local or other Authority in relation to the occupation, conduct or user of the PREMISES;</li>
+        </ol>
+    </details>
+
+    <details>
+        <summary>3. The Agent's Covenants</summary>
+        <p>The AGENTS hereby agrees with the Tenant as follows:</p>
+        <ol type="i">
+            <li>To allow the Tenant to enjoy quiet possession for the term of the lease.</li>
+            <li>To keep the structure and the outside of the Premises in a good state of repair and painted where necessary.</li>
+            <li>To pay income tax if applicable.</li>
+        </ol>
+    </details>
+
+    <details>
+        <summary>4. Mutual Agreements and Conditions</summary>
+        <p>IT IS HEREBY AGREED between the Agent and the Tenant as follows:</p>
+        <ol type="i">
+            <li>If the rent at any time during the period of the tenancy become more than fourteen (14) days in arrears whether legally demanded or not or if the Tenant shall omit to perform or to observe any of the convents herein contained the Landlord or its authorized agents retain the right to terminate the tenancy and assume possession of the Premises immediately and take whatever action they think fit to recover the arrears of rent PROVIDED that the Landlord may at its discretion give to the Tenant seven (7) days' notice of the breach and the proposed redress and if such notice is not complied with by the Tenant within the said seven (7) days then the landlord shall take without further notice to the Tenant whatever action the Landlord thinks fit to recover the arrears of rent and/or obtain the redress required including distress for rent.</li>
+            <li>If the Tenant defaults in paying any sum referred to in this Agreement and shall continue in default for one month/one quater (or more from the day such payment falls due or as the case may be from the date of demand thereof from the Landlord and its agents then such sum together with interest thereon at the prevailing rate for overdraft facilities charged by banks from the date of such default until payment in full shall be recoverable (whether formally demanded or not) as rent arrears including legal charges;</li>
+            <li>The Tenant shall be entitled to renew the term hereof for (3)years from the expiry of the term hereby created and shall if so desired deliver to the agents a written notice of such desire at least two (2) calendar months prior to expiry of the term hereof PROVIDED that there shall not at the time of such request be any existing breach or non-observance of any of the covenants agreements, conditions of provisions contained or implied herein on the part of the Tenant to be observed or performed. Subject as herein after provided the agents at the expense of the Tenant shall grant to the Tenant a further term of three (3) years from the expiration of the term hereby created containing the like covenants agreements conditions and provisions as are herein contained excepting that the rent payable shall be may be increased by 10% or as dictated by prevailing market conditions and shall be agreed between the parties hereto within a period of one (1) calendar month from the date of receipt by the Landlord of the Tenant's notice to renew time being of the essence and in default of such agreement the rent payable shall be assessed before expiry of the term hereby created by an Independent Valuer appointed by the Landlord as the then current rental value of the Premises. In default of the rent having been fixed by agreement or assessment as herein provided by the expiration of the term hereby created this option shall be null and void;</li>
+            <li>To yield the premises at the expiration or sooner determination of the term hereby created in good and tenantable repair, order and condition in accordance with the Lessee's covenants hereinabove contained and with all locks, keys and fastenings complete.</li>
+            <li>The security of the Premises shall be the Tenant's responsibility;</li>
+            <li>Any notice required to be served shall be in writing and shall be sufficiently served upon either party if forwarded to that party in person or by registered post or left at the party's last known address in Kenya. A notice to the Tenant may be left at the Premises. A notice sent by post shall be deemed to have been given (7) days after the date of posting thereof;</li>
+            <li>Two (2) months' rent is required as a deposit to be held by the Landlord for the duration of the tenancy. This sum shall be refunded without interest to the Tenant at the termination of the tenancy PROVIDED that all sums payable by the Tenant hereunder shall have been paid to the Landlord and the Landlord shall be entitled to deduct any sums due from the deposit for any repairs required to restore the premises to its former state.</li>
+        </ol>
+    </details>
+
+    <details>
+        <summary>5. Acceptance and Signatures</summary>
+        <p>The Tenant hereby accepts this agreement subject to the conditions, restrictions and stipulations above set forth or referred to.</p>
+        <p>Having read and understood this agreement, both parties have set their respective hands on this agreement this
+            <span style="background-color: lightgreen;" data-id="signing.day" data-description="Day of signing">[signing.day: Day of signing]</span> day of
+            <span style="background-color: lightgreen;" data-id="signing.month" data-description="Month of signing">[signing.month: Month of signing]</span>, 20<span style="background-color: lightgreen;" data-id="signing.year" data-description="Year of signing">[signing.year: Year of signing]</span>.
+        </p>
+
+        <table>
+            <tr>
+                <td><strong>Tenants Name:</strong></td>
+                <td><span style="background-color: lightgreen;" data-id="tenant.name_signature" data-description="Tenant's Name (for signature)">[tenant.name_signature: Tenant's Name (for signature)]</span></td>
+                <td><strong>Next of Kin:</strong></td>
+                <td><span style="background-color: yellow;" data-id="tenant.next_of_kin" data-description="Tenant's Next of Kin Name">[tenant.next_of_kin: Tenant's Next of Kin Name]</span></td>
+            </tr>
+            <tr>
+                <td><strong>ID No:</strong></td>
+                <td><span style="background-color: lightgreen;" data-id="tenant.id_signature" data-description="Tenant's ID Number (for signature)">[tenant.id_signature: Tenant's ID Number (for signature)]</span></td>
+                <td><strong>Kins' Contact:</strong></td>
+                <td><span style="background-color: yellow;" data-id="tenant.kin_contact" data-description="Next of Kin's Contact Number">[tenant.kin_contact: Next of Kin's Contact Number]</span></td>
+            </tr>
+            <tr>
+                <td><strong>Email address:</strong></td>
+                <td><span style="background-color: yellow;" data-id="tenant.email" data-description="Tenant's Email Address">[tenant.email: Tenant's Email Address]</span></td>
+                <td><strong>Relationship:</strong></td>
+                <td><span style="background-color: yellow;" data-id="tenant.kin_relationship" data-description="Relationship to Next of Kin">[tenant.kin_relationship: Relationship to Next of Kin]</span></td>
+            </tr>
+             <tr>
+                <td><strong>Signature:</strong></td>
+                <td colspan="3" style="height: 50px;"><span style="background-color: lightgreen;" data-id="tenant.signature_placeholder" data-description="Tenant's Signature Area">[tenant.signature_placeholder: Tenant's Signature Area]</span></td>
+            </tr>
+        </table>
+        
+        <br>
+        
+        <table>
+            <tr>
+                <td><strong>SIGNED by the AGENT</strong></td>
+            </tr>
+            <tr>
+                <td><strong>Agents Name:</strong> <span style="background-color: lightgreen;" data-id="agent.signer_name" data-description="Agent's Signer Name and Title">[agent.signer_name: Agent's Signer Name and Title]</span></td>
+            </tr>
+            <tr>
+                <td style="height: 50px;"><strong>Signature:</strong> <span style="background-color: lightgreen;" data-id="agent.signature_placeholder" data-description="Agent's Signature Area">[agent.signature_placeholder: Agent's Signature Area]</span></td>
+            </tr>
+             <tr>
+                <td><strong>For: SCENIC-LINK INVESTMENTS LTD</strong></td>
+            </tr>
+        </table>
+    </details>
+
+</body>
+</html>
